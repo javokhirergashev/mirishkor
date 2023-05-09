@@ -7,7 +7,7 @@
                         <div class="thumb">
                             <img alt="Logo" src="/frontend-files/images/logo-wide-white.png">
                         </div>
-                        <div class="description">203, Envato Labs, Behind Alis Steet, Melbourne, Australia.immersion along the information close the loop on focusing</div>
+                        <div class="description"> <?= Yii::t("app", "slider2") ?></div>
                         <?php if (!empty($contacts)): ?>
                             <?php foreach ($contacts as $contact): ?>
                                 <ul class="mb-30">
@@ -74,12 +74,11 @@
                 <div class="row pt-20 pb-20">
                     <div class="col-sm-6">
                         <div class="footer-paragraph">
-                            © 2021 ThemeMascot. All Rights Reserved.
+                            © 2023 WEBSPACE. All Rights Reserved.
                         </div>
                     </div>
                     <div class="col-sm-6">
                         <div class="footer-paragraph text-right">
-                            Site Template
                         </div>
                     </div>
                 </div>

@@ -6,8 +6,8 @@
                     <div class="row header-nav-col-row">
                         <div class="col-sm-auto align-self-center">
                             <a class="menuzord-brand site-brand" href="index-mp-layout1.html">
-                                <img class="logo-light logo-default logo-1x" src="/frontend-files/images/logo-wide-white.png" alt="Logo">
-                                <img class="logo-light logo-default logo-2x retina" src="/frontend-files/images/logo-wide-white%402x.png" alt="Logo">
+                                <img class="logo-light logo-default logo-1x" src="/frontend-files/images/logo.png" alt="Logo">
+                                <img class="logo-light logo-default logo-2x retina" src="/frontend-files/images/logo.png" alt="Logo">
 
                                 <img class="logo-dark logo-default logo-1x" src="/frontend-files/images/logo-wide.png" alt="Logo">
                                 <img class="logo-dark logo-default logo-2x retina" src="/frontend-files/images/logo-wide%402x.png" alt="Logo">
@@ -29,40 +29,25 @@
                         </div>
                         <div class="col-sm-auto align-self-center nav-side-icon-parent">
                             <ul class="list-inline nav-side-icon-list">
-                                <li class="hidden-mobile-mode"><a href="#" id="top-nav-search-btn"><i class="search-icon fa fa-search"></i></a></li>
                                 <li class="hidden-mobile-mode">
                                     <div class="top-nav-mini-cart-icon-container">
                                         <div class="top-nav-mini-cart-icon-contents">
-                                            <a class="mini-cart-icon" href="shop-cart.html" title="View your shopping cart">
-                                                <img src="/frontend-files/images/shopping-cart.png" width="25" alt="cart"><span class="items-count">1</span> <span class="cart-quick-info">1 item - <span class="amount"><span class="currencySymbol">&pound;</span>18.00</span></span>
-                                            </a>
-                                            <div class="dropdown-content">
+                                            <div  class="language-sh"  title="">
+                                                <i style="font-size: 28px; color: white;" class="lan-icon fa fa-language" ></i>                       </div>
+                                            <div style="padding: 0px!important; width: 150px;" class="dropdown-content">
                                                 <ul class="cart_list product_list_widget">
-                                                    <li class="mini_cart_item">
-                                                        <a href="#" class="remove remove_from_cart_button" aria-label="Remove this item" data-product_id="18832" data-cart_item_key="#" data-product_sku="woo-beanie">&times;</a>
-                                                        <a href="#"> <img class="attachment-thumbnail" src="/frontend-files/images/shop/product.jpg" width="300" height="300" alt="images"/>Beanie</a>
-                                                        <span class="quantity">1 &times; <span class="amount">
-                              <span class="currencySymbol">&pound;</span>18.00</span></span>
+                                                    <li style="padding: 15px; font-size: 18px" class="mini_cart_item">
+                                                        <?php
+                                                        foreach (Yii::$app->params['languages'] as $key => $value) {
+                                                            echo " <a class='dropdown-item' href='" . \yii\helpers\Url::current(['language' => $value]) . "'>$value</a>";
+                                                        }
+                                                        ?>
                                                     </li>
                                                 </ul>
-                                                <p class="total"> <strong>Subtotal:</strong> <span class="woocommerce-Price-amount amount"><span class="currencySymbol">&pound;</span>18.00</span> </p>
-                                                <div class="buttons cart-action-buttons">
-                                                    <div class="row">
-                                                        <div class="col-6 pe-0"><a href="shop-cart.html" class="btn btn-theme-colored2 btn-block btn-sm wc-forward">View Cart</a></div>
-                                                        <div class="col-6 pe-1"><a href="shop-checkout.html" class="btn btn-theme-colored1 btn-block btn-sm checkout wc-forward">Checkout</a></div>
-                                                    </div>
+                                                <div class="row">
                                                 </div>
                                             </div>
                                         </div>
-                                    </div>
-                                </li>
-                                <li class="hidden-mobile-mode">
-                                    <div id="side-panel-trigger" class="side-panel-trigger">
-                                        <a href="#">
-                                            <div class="hamburger-box">
-                                                <div class="hamburger-inner"></div>
-                                            </div>
-                                        </a>
                                     </div>
                                 </li>
                             </ul>
@@ -97,12 +82,9 @@
                     <div class="row">
                         <div class="col-lg-7">
                             <div class="content-box section-typo-light">
-                                <h4 class="sub-title mb-0">We Provide</h4>
-                                <h1 class="title mt-0" data-tm-font-size="4rem">Total Health Care Solution</h1>
-                                <p class="paragraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                                <h1 class="title mt-0" data-tm-font-size="4rem"><?= Yii::t("app", "slider1") ?></h1>
+                                <p class="paragraph"><?= Yii::t("app", "slider2") ?></p>
                                 <div class="btn-wrapper">
-                                    <a href="#" class="btn btn-outline-light mr-10">Read More</a>
-                                    <a href="#" class="btn btn-theme-colored2">Contact Us</a>
                                 </div>
                             </div>
                         </div>
@@ -115,30 +97,10 @@
                     <div class="row justify-content-center">
                         <div class="col-lg-8">
                             <div class="content-box section-typo-light text-center">
-                                <h4 class="sub-title mb-0">This is subtitle</h4>
-                                <h1 class="title mt-0" data-tm-font-size="4rem">Awesome Owl Slider in Action</h1>
-                                <p class="paragraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                                <h4 class="sub-title mb-0"></h4>
+                                <h1 class="title mt-0" data-tm-font-size="4rem"><?= Yii::t("app", "slider1") ?></h1>
+                                <p class="paragraph"><?= Yii::t("app", "slider2") ?></p>
                                 <div class="btn-wrapper">
-                                    <a href="#" class="btn btn-outline-light mr-10">Read More</a>
-                                    <a href="#" class="btn btn-theme-colored2">Contact Us</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="slide-item fullscreen d-flex align-items-center">
-                <div class="image-layer" data-tm-bg-img="/frontend-files/images/bg/bg3.jpg"></div>
-                <div class="container">
-                    <div class="row justify-content-end">
-                        <div class="col-lg-8">
-                            <div class="content-box section-typo-light text-right">
-                                <h4 class="sub-title mb-0">This is subtitle</h4>
-                                <h1 class="title mt-0" data-tm-font-size="4rem">Awesome Owl Slider in Action</h1>
-                                <p class="paragraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-                                <div class="btn-wrapper">
-                                    <a href="#" class="btn btn-outline-light mr-10">Read More</a>
-                                    <a href="#" class="btn btn-theme-colored2">Contact Us</a>
                                 </div>
                             </div>
                         </div>

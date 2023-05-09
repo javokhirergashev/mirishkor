@@ -47,19 +47,9 @@
                                                     </div>
                                                     <div class="staff-content">
                                                         <h5 class="name"><a href="#"><?= $model->firstname ?> <?= $model->lastname ?></a></h5>
-                                                        <div class="speciality">Dentist</div>
+                                                        <div class="speciality">Shifokor</div>
                                                         <ul class="contact-info"></ul>
                                                         <div class="staff-working-hours">
-                                                            <ul class="working-hours">
-                                                                <li class="clearfix">
-                                                                    <span>Monday - Friday</span>
-                                                                    <div class="value">8.00 - 17.00</div>
-                                                                </li>
-                                                                <li class="clearfix">
-                                                                    <span>Saturday</span>
-                                                                    <div class="value">9.00 - 16.00</div>
-                                                                </li>
-                                                            </ul>
                                                         </div>
                                                         <ul class="styled-icons icon-dark icon-theme-colored1 icon-circled icon-sm">
                                                             <li><a class="styled-icons-item" target="_blank" href="<?= $model->telegram_link ?>"><i class="fab fa-telegram"></i></a></li>

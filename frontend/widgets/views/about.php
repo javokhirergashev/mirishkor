@@ -62,11 +62,11 @@
                                     </li>
                                     <li class="clearfix">
                                         <span><?= Yii::t("app", "thursday") ?></span>
-                                        <div class="value">8.00 - 1.00</div>
+                                        <div class="value">8.00 - 16.00</div>
                                     </li>
                                     <li class="clearfix">
                                         <span><?= Yii::t("app", "friday") ?></span>
-                                        <div class="value">9.00 - 16.00</div>
+                                        <div class="value">8.00 - 16.00</div>
                                     </li>
                                     <li class="clearfix">
                                         <span><?= Yii::t("app", "sunday") ?></span>
@@ -89,18 +89,16 @@
         <div class="section-content">
             <div class="row">
                 <div class="col-sm-12 col-md-12 col-lg-7">
-                    <h2>Our Services</h2>
-                    <p>Eaque libero unde corrupti deleniti maxime ratione doloremque suscipit perferendis aperiam labore debitis atque odit neque possimus optio quo. Eaque libero unde corrupti deleniti maxime ratione doloremque suscipit perferendis aperiam labore suscipit perferendis aperiam labore debitis atque odit neque Eaque libero unde corrupti deleniti maxime ratione doloremque suscipit perferendis aperiam labore debitis atque odit neque possimus optio quo.</p>
+                    <h2><?= Yii::t("app", "about1") ?></h2>
+                    <p><?= Yii::t("app", "about2") ?></p>
                     <div class="row mb-10">
                         <div class="col-sm-6">
                             <div class="tm-sc-icon-box icon-box icon-left tm-iconbox-icontype-font-icon text-left iconbox-centered-in-responsive iconbox-theme-colored1 icon-position-icon-left mb-30">
                                 <div class="icon-box-wrapper">
                                     <a class="icon icon-type-font-icon icon-gray mb-20"> <i class="flaticon-medical-ambulance14" ></i> </a>
-                                    <div class="icon-text">
-                                        <h5 class="icon-box-title"> Emergency Care</h5>
-                                        <div class="content">
-                                            <p>consectetur adipisicing elit.</p>
-                                        </div>
+                                    <div class="icon-text"><br>
+                                        <h5 class="icon-box-title"> <?= Yii::t("app", "service1") ?></h5>
+
                                     </div>
                                     <div class="clearfix"></div>
                                 </div>
@@ -110,11 +108,8 @@
                             <div class="tm-sc-icon-box icon-box icon-left tm-iconbox-icontype-font-icon text-left iconbox-centered-in-responsive iconbox-theme-colored1 icon-position-icon-left mb-30">
                                 <div class="icon-box-wrapper">
                                     <a class="icon icon-type-font-icon icon-gray mb-20"> <i class="flaticon-medical-illness"></i> </a>
-                                    <div class="icon-text">
-                                        <h5 class="icon-box-title">Operation Theater</h5>
-                                        <div class="content">
-                                            <p>consectetur adipisicing elit.</p>
-                                        </div>
+                                    <div class="icon-text"><br>
+                                        <h5 class="icon-box-title"> <?= Yii::t("app", "service4") ?></h5>
                                     </div>
                                     <div class="clearfix"></div>
                                 </div>
@@ -126,11 +121,8 @@
                             <div class="tm-sc-icon-box icon-box icon-left tm-iconbox-icontype-font-icon text-left iconbox-centered-in-responsive iconbox-theme-colored1 icon-position-icon-left mb-30">
                                 <div class="icon-box-wrapper">
                                     <a class="icon icon-type-font-icon icon-gray mb-20"> <i class="flaticon-medical-stethoscope10"></i> </a>
-                                    <div class="icon-text">
-                                        <h5 class="icon-box-title">Outdoor Checkup</h5>
-                                        <div class="content">
-                                            <p>consectetur adipisicing elit.</p>
-                                        </div>
+                                    <div class="icon-text"><br>
+                                        <h5 class="icon-box-title"> <?= Yii::t("app", "service2") ?></h5>
                                     </div>
                                     <div class="clearfix"></div>
                                 </div>
@@ -140,11 +132,8 @@
                             <div class="tm-sc-icon-box icon-box icon-left tm-iconbox-icontype-font-icon text-left iconbox-centered-in-responsive iconbox-theme-colored1 icon-position-icon-left mb-30 " >
                                 <div class="icon-box-wrapper">
                                     <a class="icon icon-type-font-icon icon-gray mb-20"> <i class="flaticon-medical-balls" ></i> </a>
-                                    <div class="icon-text">
-                                        <h5 class="icon-box-title">Cancer Service</h5>
-                                        <div class="content">
-                                            <p>consectetur adipisicing elit.</p>
-                                        </div>
+                                    <div class="icon-text"><br>
+                                        <h5 class="icon-box-title"> <?= Yii::t("app", "service5") ?></h5>
                                     </div>
                                     <div class="clearfix"></div>
                                 </div>
@@ -156,11 +145,8 @@
                             <div class="tm-sc-icon-box icon-box icon-left tm-iconbox-icontype-font-icon text-left iconbox-centered-in-responsive iconbox-theme-colored1 icon-position-icon-left mb-30 " >
                                 <div class="icon-box-wrapper">
                                     <a class="icon icon-type-font-icon icon-gray mb-20"> <i class="flaticon-medical-drops1" ></i> </a>
-                                    <div class="icon-text">
-                                        <h5 class="icon-box-title">Blood Test</h5>
-                                        <div class="content">
-                                            <p>consectetur adipisicing elit.</p>
-                                        </div>
+                                    <div class="icon-text"><br>
+                                        <h5 class="icon-box-title"> <?= Yii::t("app", "service3") ?></h5>
                                     </div>
                                     <div class="clearfix"></div>
                                 </div>
@@ -170,11 +156,8 @@
                             <div class="tm-sc-icon-box icon-box icon-left tm-iconbox-icontype-font-icon text-left iconbox-centered-in-responsive iconbox-theme-colored1 icon-position-icon-left mb-30" >
                                 <div class="icon-box-wrapper">
                                     <a class="icon icon-type-font-icon icon-gray mb-20"> <i class="flaticon-medical-tablets9" ></i> </a>
-                                    <div class="icon-text">
-                                        <h5 class="icon-box-title" > Pharmacy</h5>
-                                        <div class="content">
-                                            <p>consectetur adipisicing elit.</p>
-                                        </div>
+                                    <div class="icon-text"><br>
+                                        <h5 class="icon-box-title" > <?= Yii::t("app", "service6") ?></h5>
                                     </div>
                                     <div class="clearfix"></div>
                                 </div>
