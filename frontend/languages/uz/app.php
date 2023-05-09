@@ -50,5 +50,13 @@ return [
     "send_email" => "Bizga xabar yo'llang",
     "call_center" => "Kol markazi",
     "vacancy" => "Bizning bo'sh ish o'rinlarimiz",
+    "links" => "Tezkor havolalar",
+    "schedule" => "Ish vaqti",
+    "schedule1" => "Dushanba-payshanba: ",
+    "schedule2" => "Juma-shanba: ",
+    "sunday" => "Yakshanba: ",
+    "sunday1" => "Dam olish kuni",
+    "friday" => "Juma :",
+    "thursday" => "Payshanba :",
 ]
 ?>

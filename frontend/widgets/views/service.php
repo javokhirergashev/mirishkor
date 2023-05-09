@@ -1,36 +1,38 @@
-<!-- Service Section Start -->
-<section class="service-wrap style3 ptb-100 bg-athens">
+<section>
     <div class="container">
-        <div class="row">
-            <div class="col-xl-6 offset-xl-3 col-lg-8 offset-lg-2 col-md-10 offset-md-1" data-aos="fade-up"
-                 data-aos-duration="1200" data-aos-delay="200">
-                <div class="section-title style1 text-center mb-40">
-                    <span> <?= Yii::t("app", "service0") ?></span>
-                    <h2> <?= Yii::t("app", "service01") ?></h2>
+        <div class="tm-sc-section-title section-title section-title-style1 text-center">
+            <div class="title-wrapper">
+                <h2 class="title icon-bottom"> <span class=""></span> <span class="text-theme-colored1"><?= Yii::t("app", "service0") ?></span></h2>
+                <div class="title-seperator-line"></div>
+                <div class="paragraph">
                 </div>
             </div>
         </div>
-        <div class="service-slider-one style2 owl-carousel">
-            <?php if (!empty($models)): ?>
-            <?php foreach ($models as $model): ?>
-                <?php
+        <div class="section-content">
+            <div class="row">
+                <?php if (!empty($models)): ?>
+                    <?php foreach ($models as $model): ?>
+                    <?php
                     $img = \common\models\StaticFunctions::getImage('service', $model->id, $model->image);
-                ?>
-                    <div class="service-card style3" data-aos="fade-left" data-aos-duration="1200" data-aos-delay="200">
-                        <div class="service-img">
-                            <img src="<?= $img ?>" alt="Image">
-                            <span class="service-icon"><i class="flaticon-traumatology"></i></span>
+                    ?>
+                        <div class="col-md-6 col-lg-6 col-xl-4">
+                            <div class="tm-sc-services services-style-current-theme2">
+                                <div class="tm-service">
+                                    <div class="thumb">
+                                        <img src="<?= $img ?>" alt="image">
+                                        <a href="#" class="icon bg-theme-colored1"><i class="flaticon-medical-ambulance14"></i></a>
+                                    </div>
+                                    <div class="content">
+                                        <h4 class="mt-0 font-20"><?= $model->getServiceName() ?></h4>
+                                        <p><?= $model->getServiceDescription() ?></p>
+                                        <a class="text-black-999 text-hover-theme-colored1" href="#"><i class="fa fa-angle-double-right"></i> Read more</a>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                        <div class="service-info">
-                            <h3><a href="service-details.html"></a></h3>
-                            <p><?= $model->getServiceName() ?></p>
-                            <p href="service-details.html" class="link style2"><?= $model->getServiceDescription() ?></p>
-                        </div>
-                    </div>
-                <?php endforeach; ?>
-            <?php endif; ?>
-
+                    <?php endforeach; ?>
+                <?php endif; ?>
+            </div>
         </div>
     </div>
 </section>
-<!-- Service Section End -->

@@ -1,174 +1,90 @@
-<!-- Footer Section Start -->
-<footer class="footer-wrap">
-    <div class="container">
-        <div class="row pt-100 pb-75">
-            <div class="col-xl-3 col-lg-5 col-md-5 col-sm-12">
-                <div class="footer-widget">
-                    <a href="index.html" class="footer-logo">
-                        <img  src="/frontend-files/img/logo-white.png" alt="Image">
-                    </a>
-                    <p class="comp-desc">
-                        <?= Yii::t("app", "slider2") ?>
-                    </p>
-                    <ul class="social-profile style1 list-style">
-                        <li>
-                            <a href="https://facebook.com/">
-                                <i class="ri-facebook-fill"></i>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="https://twitter.com/">
-                                <i class="ri-twitter-fill"></i>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="https://instagram.com/">
-                                <i class="ri-instagram-line"></i>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="https://linkedin.com/">
-                                <i class="ri-linkedin-fill"></i>
-                            </a>
-                        </li>
+<footer id="footer" class="footer">
+    <div class="footer-widget-area">
+        <div class="container pt-90 pb-60">
+            <div class="row">
+                <div class="col-md-6 col-lg-6 col-xl-3">
+                    <div class="tm-widget-contact-info contact-info-style1 contact-icon-theme-colored1">
+                        <div class="thumb">
+                            <img alt="Logo" src="/frontend-files/images/logo-wide-white.png">
+                        </div>
+                        <div class="description">203, Envato Labs, Behind Alis Steet, Melbourne, Australia.immersion along the information close the loop on focusing</div>
+                        <?php if (!empty($contacts)): ?>
+                            <?php foreach ($contacts as $contact): ?>
+                                <ul class="mb-30">
+                                    <li class="contact-phone">
+                                        <div class="icon"><i class="flaticon-contact-042-phone-1"></i></div>
+                                        <div class="text"><a href="tel:<?= $contact->first_phone ?>"><?= $contact->first_phone ?></a></div>
+                                    </li>
+                                    <li class="contact-email">
+                                        <div class="icon"><i class="flaticon-contact-043-email-1"></i></div>
+                                        <div class="text"><a href="mailto:<?= $contact->email ?>"><?= $contact->email ?></a></div>
+                                    </li>
+                                    <li class="contact-address">
+                                        <div class="icon"><i class="flaticon-contact-047-location"></i></div>
+                                        <div class="text"><?= $contact->address?></div>
+                                    </li>
+                                </ul>
+                            <?php endforeach ?>
+                        <?php endif; ?>
+                    </div>
+                    <ul class="styled-icons icon-dark icon-theme-colored1 icon-rounded clearfix">
+                        <li><a class="social-link" href="#" ><i class="fab fa-facebook"></i></a></li>
+                        <li><a class="social-link" href="#" ><i class="fab fa-twitter"></i></a></li>
+                        <li><a class="social-link" href="#" ><i class="fab fa-youtube"></i></a></li>
+                        <li><a class="social-link" href="#" ><i class="fab fa-instagram"></i></a></li>
                     </ul>
                 </div>
-            </div>
-            <div class="col-xl-2 col-lg-4 col-md-4 col-sm-6">
-                <div class="footer-widget">
-                    <h3 class="footer-widget-title">Company</h3>
-                    <ul class="footer-menu list-style">
-                        <li>
-                            <a href="index.html">
-                                <i class="ri-arrow-right-s-line"></i>
-                                Home
-                            </a>
-                        </li>
-                        <li>
-                            <a href="about.html">
-                                <i class="ri-arrow-right-s-line"></i>
-                                About Us
-                            </a>
-                        </li>
-                        <li>
-                            <a href="service-one.html">
-                                <i class="ri-arrow-right-s-line"></i>
-                                Our Services
-                            </a>
-                        </li>
-                        <li>
-                            <a href="team.html">
-                                <i class="ri-arrow-right-s-line"></i>
-                                Our Team
-                            </a>
-                        </li>
-                        <li>
-                            <a href="contact.html">
-                                <i class="ri-arrow-right-s-line"></i>
-                                Contact Us
-                            </a>
-                        </li>
-                    </ul>
+                <div class="col-md-6 col-lg-6 col-xl-1">
+
+                </div>
+                <div class="col-md-6 col-lg-6 col-xl-3">
+                    <div class="widget widget_nav_menu">
+                        <h4 class="widget-title widget-title-line-bottom line-bottom-theme-colored1"><?= Yii::t("app", "links") ?></h4>
+                        <ul>
+                            <?php if (!empty($models)): ?>
+                            <?php foreach ($models as $model): ?>
+                                 <li><a href="<?= $model->link ?>"><?= $model->getName() ?></a></li>
+                                <?php endforeach ?>
+                            <?php endif; ?>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-6 col-xl-3">
+                    <div class="widget">
+                        <h4 class="widget-title widget-title-line-bottom line-bottom-theme-colored1"><?= Yii::t("app", "schedule") ?></h4>
+                        <div class="opening-hours border-dark">
+                            <ul>
+                                <li class="clearfix"> <span> <?= Yii::t("app", "schedule1") ?>  </span>
+                                    <div class="value"> 10.00  - 18.00  </div>
+                                </li>
+                                <li class="clearfix"> <span><?= Yii::t("app", "schedule2") ?></span>
+                                    <div class="value"> 8.00  - 19.00  </div>
+                                </li>
+                                <li class="clearfix"> <span> <?= Yii::t("app", "sunday") ?> </span>
+                                    <div class="value"> <?= Yii::t("app", "sunday1") ?> </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <div class="col-xl-2 col-lg-3 col-md-3 col-sm-6">
-                <div class="footer-widget">
-                    <h3 class="footer-widget-title">Important</h3>
-                    <ul class="footer-menu list-style">
-                        <li>
-                            <a href="portfolio.html">
-                                <i class="ri-arrow-right-s-line"></i>
-                                Portfolio
-                            </a>
-                        </li>
-                        <li>
-                            <a href="appointment.html">
-                                <i class="ri-arrow-right-s-line"></i>
-                                Appointment
-                            </a>
-                        </li>
-                        <li>
-                            <a href="faq.html">
-                                <i class="ri-arrow-right-s-line"></i>
-                                FAQ
-                            </a>
-                        </li>
-                        <li>
-                            <a href="privacy-policy.html">
-                                <i class="ri-arrow-right-s-line"></i>
-                                Privacy Policy
-                            </a>
-                        </li>
-                        <li>
-                            <a href="terms-of-service.html">
-                                <i class="ri-arrow-right-s-line"></i>
-                                Terms &amp; Conditions
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-            <div class="col-xl-2 col-lg-5 col-md-6 col-sm-6 pe-xl-4">
-                <div class="footer-widget">
-                    <h3 class="footer-widget-title">Quick Link</h3>
-                    <ul class="footer-menu list-style">
-                        <li>
-                            <a href="about.html">
-                                <i class="ri-arrow-right-s-line"></i>
-                                Why Choose Us
-                            </a>
-                        </li>
-                        <li>
-                            <a href="pricing-plan.html">
-                                <i class="ri-arrow-right-s-line"></i>
-                                Pricing Plan
-                            </a>
-                        </li>
-                        <li>
-                            <a href="blog-left-sidebar.html">
-                                <i class="ri-arrow-right-s-line"></i>
-                                News &amp; Articles
-                            </a>
-                        </li>
-                        <li>
-                            <a href="login.html">
-                                <i class="ri-arrow-right-s-line"></i>
-                                Login
-                            </a>
-                        </li>
-                        <li>
-                            <a href="contact.html">
-                                <i class="ri-arrow-right-s-line"></i>
-                                Subscribe
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-            <div class="col-xl-3 col-lg-7 col-md-6 col-sm-6">
-                <div class="footer-widget">
-                    <h3 class="footer-widget-title">Official Info</h3>
-                    <ul class="contact-info list-style">
-                        <li>
-                            <i class="flaticon-map"></i>
-                            <h6>Location</h6>
-                            <p>2767 Sunrise Street, NY 1002, USA</p>
-                        </li>
-                        <li>
-                            <i class="flaticon-email-1"></i>
-                            <h6>Email</h6>
-                            <a href="https://templates.hibotheme.com/cdn-cgi/l/email-protection#553d3039393a152130393c7b363a38"><span class="__cf_email__" data-cfemail="b7dfd2dbdbd8f7c3d2dbde99d4d8da">[email&#160;protected]</span></a>
-                        </li>
-                        <li>
-                            <i class="flaticon-phone-call-1"></i>
-                            <h6>Phone</h6>
-                            <a href="tel:13454567877">+1-3454-5678-77</a>
-                        </li>
-                    </ul>
+        </div>
+        <div class="footer-bottom" data-tm-bg-color="#2A2A2A">
+            <div class="container">
+                <div class="row pt-20 pb-20">
+                    <div class="col-sm-6">
+                        <div class="footer-paragraph">
+                            © 2021 ThemeMascot. All Rights Reserved.
+                        </div>
+                    </div>
+                    <div class="col-sm-6">
+                        <div class="footer-paragraph text-right">
+                            Site Template
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
-    <p class="copyright-text"><i class="ri-copyright-line"></i> <span>Teli</span>. All Rights Reserved By <a href="https://hibotheme.com/">HiboTheme</a></p>
 </footer>
-<!-- Footer Section End -->
+<a class="scrollToTop" href="#"><i class="fa fa-angle-up"></i></a>
