@@ -12,11 +12,11 @@
                                             <a class="icon icon-type-font-icon icon-gray icon-bordered"> <i class="flaticon-medical-emergency7"></i> </a>
                                         </div>
                                         <div class="icon-text">
-                                            <h4 class="icon-box-title">Emergency Case</h4>
+                                            <h4 class="icon-box-title"> <?= Yii::t("app", "service1") ?></h4>
                                             <div class="content">
-                                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit Aliquam interdum.</p>
+                                                <p> <?= Yii::t("app", "service1t") ?></p>
                                             </div>
-                                            <div class="btn-view-details"> <a target="_self" href="#" class="btn btn-plain-text-with-arrow btn-sm">Register Now</a>
+                                            <div class="btn-view-details"> <a target="_self" href="#" class="btn btn-plain-text-with-arrow btn-sm"> <?= Yii::t("app", "more") ?></a>
                                             </div>
                                         </div>
                                         <div class="clearfix"></div>
@@ -36,11 +36,11 @@
                                             <a class="icon icon-type-font-icon icon-gray icon-bordered"> <i class="flaticon-medical-medical51" ></i> </a>
                                         </div>
                                         <div class="icon-text">
-                                            <h4 class="icon-box-title">Experienced Doctor</h4>
+                                            <h4 class="icon-box-title"> <?= Yii::t("app", "service2") ?></h4>
                                             <div class="content">
-                                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit Aliquam interdum.</p>
+                                                <p> <?= Yii::t("app", "service2t") ?></p>
                                             </div>
-                                            <div class="btn-view-details"> <a target="_self" href="#" class="btn btn-plain-text-with-arrow btn-sm">Register Now</a>
+                                            <div class="btn-view-details"> <a target="_self" href="#" class="btn btn-plain-text-with-arrow btn-sm"> <?= Yii::t("app", "more") ?></a>
                                             </div>
                                         </div>
                                         <div class="clearfix"></div>

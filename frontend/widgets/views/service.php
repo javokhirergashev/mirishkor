@@ -25,7 +25,7 @@
                                     <div class="content">
                                         <h4 class="mt-0 font-20"><?= $model->getServiceName() ?></h4>
                                         <p><?= $model->getServiceDescription() ?></p>
-                                        <a class="text-black-999 text-hover-theme-colored1" href="#"><i class="fa fa-angle-double-right"></i> Read more</a>
+                                        <a class="text-black-999 text-hover-theme-colored1" href="#"><i class="fa fa-angle-double-right"></i>  <?= Yii::t("app", "more") ?></a>
                                     </div>
                                 </div>
                             </div>

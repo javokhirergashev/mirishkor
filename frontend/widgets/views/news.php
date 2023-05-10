@@ -53,7 +53,7 @@
 
                                                         <div class="post-excerpt">
                                                         </div>
-                                                        <div class="post-btn-readmore"> <a href="<?=yii\helpers\Url::to(['newsview/view', "id"=>$model->id]);?>" class="btn btn-plain-text-with-arrow"> View Details </a></div>
+                                                        <div class="post-btn-readmore"> <a href="<?=yii\helpers\Url::to(['newsview/view', "id"=>$model->id]);?>" class="btn btn-plain-text-with-arrow">  <?= Yii::t("app", "more") ?> </a></div>
                                                         <div class="clearfix"></div>
                                                     </div>
                                                 </article>
